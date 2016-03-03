@@ -8,8 +8,8 @@ public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
 		ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
-		LogService logService = appContext.getBean("logService", LogService.class);
-		logService.log("Rajan Punchouty");
+//		LogService logService = appContext.getBean("logService", LogService.class);
+//		logService.log("Rajan Punchouty");
 		JokerThread main = appContext.getBean("jokerThread", JokerThread.class);
 		main.start();
 		main.join();

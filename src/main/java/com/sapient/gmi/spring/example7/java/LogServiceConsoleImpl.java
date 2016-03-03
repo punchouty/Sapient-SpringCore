@@ -1,6 +1,8 @@
 package com.sapient.gmi.spring.example7.java;
 
-//@Service
+import org.springframework.stereotype.Service;
+
+@Service
 public class LogServiceConsoleImpl implements LogService {
 
 	@Override
